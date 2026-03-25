@@ -1,7 +1,11 @@
+/*
+ * This code is used at compile time to generate OCaml code for constants
+ * to use the epoll bindings.
+ */
+
 #include <sys/epoll.h>
 #include <sys/eventfd.h>
 #include <stdio.h>
-#include <stdlib.h>
 
 void constant(const char *name, int value)
 {
